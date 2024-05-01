@@ -15,9 +15,11 @@ Antes de tudo, você deverá ir até o: https://steamcommunity.com/dev/managegam
 3. Abrir o Sublime (ou qualquer outro editor de texto) e criar um arquivo chamado `server.bat`
 4.  Nesse arquivo, inserir o seguinte conteúdo: 
 
-    cd "<CS2_PATH>"
-    start /wait cs2.exe -dedicated -usercon -console -secure -dev +game_type 0 +game_mode 1 +sv_logfile 1 -serverlogging +sv_setsteamaccount <SERVER_ID> +map de_inferno +exec server.cfg
+    `cd "<CS2_PATH>"` <br>
+   `start /wait cs2.exe -dedicated -usercon -console -secure -dev +game_type 0 +game_mode 1 +sv_logfile 1 -serverlogging +sv_setsteamaccount <SERVER_ID> +map de_inferno +exec server.cfg`<br>
+
 Substituindo o `CS2_PATH` pelo caminho do arquivo cs2.exe e o `SERVER_ID` pelo ID do servidor previamente registrado. 
+
 5. Navegar até: `C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg` e inserir os aquivos `server.cfg` `comp.cfg` e `live.vcfg` presentes no diretório **`cfg`**.
 6. Abrindo a porta do servidor para outros computadores em LAN poderem se conectar ao servidor.
 
